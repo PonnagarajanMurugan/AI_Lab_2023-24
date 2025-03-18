@@ -46,12 +46,11 @@ Convert the facts in predicate form to clauses and then prove by resolution: “
 
 ### Program:
 ```
-likes(steve,X):-
-     easycourse(X).
-hard(sciencecourse).
-easycourse(X):-
-          course(X,dept(havefun)).
-course(bk301,dept(havefun)).
+likes(john,X):-food(X).
+eats(sue,X):-eats(bill,X).
+eats(bill,peanuts).
+food(apple).
+food(chicken).
 ```
 
 
